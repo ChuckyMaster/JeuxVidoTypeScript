@@ -1,0 +1,7 @@
+{
+  "files": ["src/typescript/index.ts"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES6"
+  }
+}
