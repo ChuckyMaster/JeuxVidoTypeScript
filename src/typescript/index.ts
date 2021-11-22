@@ -7,12 +7,32 @@ import "..//scss/style.scss";
 
 // console.log("putain");
 
+//SELECTORS
+
+//WEB COMPONENT
+
+//TYPE jeux video
 type jeuxVideo = {
   nom: string;
   genre: string;
   editeur: string;
-  pegi: string;
+  pegi: number;
   anneeSortie: number;
   multijoueur: boolean;
   enligne: boolean;
+  image: string;
 };
+
+//ARRAY
+
+// let listJeux: jeuxVideo = [
+
+// ]
+
+//FUNCTION
+// function catchValue(objInput: object) {
+// let obj: jeuxVideo = {
+
+// }
+
+// }

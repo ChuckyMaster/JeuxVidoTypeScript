@@ -9,6 +9,25 @@
 body {
   background-color: rgb(37, 34, 34);
   font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  input,
+  select {
+    margin: 1rem;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 0.5rem;
+    border: none;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
 }
 
 h1 {
@@ -26,7 +45,7 @@ h1 {
   p {
     color: burlywood;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1.5rem;
   }
 }

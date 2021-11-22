@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src/typescript/index.ts"),
-    form: path.join(__dirname, "src/typescript/form/form.ts"),
   },
   output: {
     path: path.join(__dirname, "dist"),
