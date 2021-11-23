@@ -1,24 +1,16 @@
 import "..//scss/style.scss";
+import { Article } from "./article";
+import { jeuxVideo } from "./data/objectTest";
+import { loadData } from "./data/loadData";
+customElements.define("article-app", Article);
 
 //SELECTORS
-
-//WEB COMPONENT
-
-//TYPE jeux video
-type jeuxVideo = {
-  nom: string;
-  genre: string;
-  editeur: string;
-  pegi: number;
-  anneeSortie: number;
-  multijoueur: boolean;
-  enligne: boolean;
-  image: URL;
-};
+let form: HTMLFormElement = document.querySelector("form")!;
+//WEB COMPONENTs
 
 //ARRAY // objet
 
-let listJeux: jeuxVideo[] = [
+export let listJeux: jeuxVideo[] = [
   {
     nom: "Mortal kombat",
     genre: "combat",
@@ -33,7 +25,7 @@ let listJeux: jeuxVideo[] = [
   },
 ];
 
-let game1: jeuxVideo = {
+export let game1: jeuxVideo = {
   nom: "Mortal kombat",
   genre: "combat",
   editeur: "je sais pas la honte",
@@ -48,18 +40,8 @@ let game1: jeuxVideo = {
 
 //FUNCTION
 
-function display(list: jeuxVideo) {
-  let affichJeux: HTMLElement = document.querySelector("#listJeux");
-  let ul: HTMLElement = document.createElement("ul");
-  affichJeux.appendChild(ul);
-  for (const property in list) {
-    if (property != "image") {
-      let li: HTMLElement = document.createElement("li");
-      ul.appendChild(li);
-
-      li.innerHTML += `${property} : ${list[property]}`;
-    }
-  }
-}
-
-display(game1);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  loadData();
+  form.reset();
+});

@@ -34,8 +34,11 @@ module.exports = {
   mode: "development",
   devServer: {
     open: false,
-    static: path.resolve(__dirname, "./dist"),
+    static: path.resolve(__dirname, "./src"),
     port: 4000,
+  },
+  resolve: {
+    extensions: [".ts", ".js"],
   },
 };
 
