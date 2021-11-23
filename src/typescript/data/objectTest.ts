@@ -13,8 +13,8 @@ export class jeuxVideo {
   public nom: string;
   public genre: string;
   public editeur: string;
-  public pegi: number;
-  public anneeSortie: number;
+  public pegi: number | string;
+  public anneeSortie: number | string;
   public multijoueur: boolean;
   public enligne: boolean;
   public image: URL;
