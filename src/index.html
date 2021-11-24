@@ -21,28 +21,42 @@
       </div>
 
       <form>
-        <h2>Inserez un jeux</h2>
+        <div class="f1">
+          <h2>Inserez un jeux</h2>
+          <input type="text" name="nom" placeholder="Nom" />
+          <label for="genre"> Choisissez un genre</label>
+          <!-- Liste deroulante -->
+          <select name="genre" id="genre">
+            <option value="">--Choisissez un genre</option>
+            <option value="fantastique">fantastique</option>
+            <option value="Horreur">Horreur</option>
+            <option value="FPS">FPS</option>
+            <option value="mmo/rpg">MMO/RPG</option>
+          </select>
 
-        <input type="text" name="nom" placeholder="Nom" />
-        <label for="genre"> Choisissez un genre</label>
+          <input type="text" name="editeur" id="" placeholder="editeur" />
+          <input type="text" name="pegi" placeholder="pegi quoi?" />
+          <input type="number" name="annee" placeholder="annee de sortie" />
+        </div>
 
-        <select name="genre" id="genre">
-          <option value="">--Choisissez un genre</option>
-          <option value="fantastique">fantastique</option>
-          <option value="Horreur">Horreur</option>
-          <option value="FPS">FPS</option>
-          <option value="mmo/rpg">MMO/RPG</option>
-        </select>
+        <!-- CHECKBOX -->
+        <div class="f2">
+          <div class="check">
+            <p>Jeux en ligne ou pas ?</p>
 
-        <input type="text" name="editeur" id="" placeholder="editeur" />
-        <input type="text" name="pegi" placeholder="pegi quoi?" />
-        <input type="number" name="annee" placeholder="annee de sortie" />
-        <input type="number" name="en ligne" placeholder="En ligne ou pas ? " />
-        <input type="number" name="multijoueur" placeholder="multijoueur ? " />
+            <input type="checkbox" name="en ligne" id="enligne" />
+          </div>
 
-        <input type="url" name="image" placeholder="url image" />
+          <div class="check">
+            <p>Jeux Multijoueur ?</p>
 
-        <button type="submit" name="add">ADD</button>
+            <input type="checkbox" name="multijoueur" id="multijoueur" />
+          </div>
+
+          <input type="url" name="image" placeholder="url image" />
+
+          <button type="submit" name="add">ADD</button>
+        </div>
       </form>
     </div>
   </body>

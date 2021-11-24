@@ -1,3 +1,5 @@
+import { jeuxVideo } from "../classes";
+
 // export type jeuxVideo = {
 //   nom: string;
 //   genre: string;
@@ -8,37 +10,6 @@
 //   enligne: boolean;
 //   image: URL;
 // };
-
-export class jeuxVideo {
-  public nom: string;
-  public genre: string;
-  public editeur: string;
-  public pegi: number | string;
-  public anneeSortie: number | string;
-  public multijoueur: boolean;
-  public enligne: boolean;
-  public image: URL;
-
-  constructor(
-    nom: string,
-    genre: string,
-    editeur: string,
-    pegi: number,
-    anneeSortie: number,
-    multijoueur: boolean,
-    enligne: boolean,
-    image: URL
-  ) {
-    this.nom = nom;
-    this.genre = genre;
-    this.editeur = editeur;
-    this.pegi = pegi;
-    this.anneeSortie = anneeSortie;
-    this.multijoueur = multijoueur;
-    this.enligne = enligne;
-    this.image = image;
-  }
-}
 
 export let game1: jeuxVideo = {
   nom: "Mortal kombat",
